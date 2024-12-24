@@ -13,22 +13,39 @@
     color: beige;
     margin-bottom: 40px;
 }
+
 .play_area_container{
     display: flex;
+    flex-direction: row;
     gap: 10px;
     justify-content: center;
+    margin: 20px;
+}
+@media screen and (max-width:845px) {
+    .play_area_container{
+        flex-direction: column;
+    }
+    .info_area_container{
+        margin: auto;
+    }
 }
 .main_area_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.1rem;
     background-color: black;
+    width: 90vw; /* Adjust width for responsiveness */
+    max-width: 600px; /* Optional: limit max width */
+    margin: auto; /* Center the grid */
 }
 .box{
     /* outline: 1px solid black; */
-    width: 200px;
-    height: 200px;
+    aspect-ratio: 1; 
     background-color: white;
+}
+.box_container{
+    display: flex;
+    justify-content: center;
 }
 #welcome{
     margin-bottom: 20px;
@@ -36,4 +53,14 @@
 #other{
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(181, 245, 255);
+}
+#reset_btn{
+    padding: 4px 8px;
+    background-color: rgb(181, 245, 255);
+    border-radius: 4px;
+    cursor: pointer;
 }
