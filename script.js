@@ -28,6 +28,7 @@ const checkWin = () =>{
             document.querySelector('.turn_indicator').innerText = boxtexts[e[0]].innerHTML + " Won";
             gameOver= true;
             document.querySelector('.info_area_container').getElementsByTagName('img')[0].style.width = "200px";
+            gameover.play();
         }
     })
 }
