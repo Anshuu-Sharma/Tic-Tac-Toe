@@ -9,7 +9,31 @@
     padding: 0.5rem;
     text-align: center;
     text-decoration: underline;
-    font-size: larger;
+    font-size: x-large;
     color: beige;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+}
+.play_area_container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.main_area_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.1rem;
+    background-color: black;
+}
+.box{
+    /* outline: 1px solid black; */
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+#welcome{
+    margin-bottom: 20px;
+}
+#other{
+    display: flex;
+    gap: 1rem;
 }
